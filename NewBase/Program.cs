@@ -16,11 +16,18 @@ namespace NewBase
             p1.Show();
             p2.Show();
 
+            Worker w1 = new Worker("Vasya", "Pupkin", 5000, "Sigma");
+            Console.WriteLine(p1.Calc());
+            Console.WriteLine(p2.Calc());
 
-            
-            
+            w1.Kuku();
+            w1.SayHello();
 
+            Console.WriteLine(w1.Zarplata());
 
+            int zp = ((Worker)p1).Zarplata();
+
+            Console.WriteLine(zp);
             Console.ReadKey();
         }
     }

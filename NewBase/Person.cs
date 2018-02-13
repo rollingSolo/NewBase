@@ -22,5 +22,15 @@ namespace NewBase
         {
             Console.WriteLine("im a Person");
         }
+
+        public virtual int Calc()
+        {
+            return 2 * 5;
+        }
+
+        public void SayHello()
+        {
+            Console.WriteLine("Dratuti");
+        }
     }
 }

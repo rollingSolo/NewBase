@@ -16,8 +16,9 @@ namespace NewBase
             Payment = pay;
             Company = company;
         }
-        public new void Show()
-        {
+        public override void Show()
+        {   
+            base.Show();
             Console.WriteLine("Im worker");
         }
 
@@ -26,6 +27,16 @@ namespace NewBase
             Console.WriteLine("Kuku");
         }
 
+        public override int Calc()
+        {
+
+            return base.Calc() + 2 * 10;
+        }
         
+        public int Zarplata()
+        {
+            return 12 * Payment;
+        }
+
     }
 }
